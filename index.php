@@ -55,7 +55,7 @@
             </div>
             <div class="card card-tema tema-grande w-100">
               <div class="card-body d-flex flex-column align-items-center text-center">
-                <img src="assets/img/javascript.png" alt="JavaScript" class="tema-img tema-img-grande mb-3">
+                <img src="assets/img/js.png" alt="JavaScript" class="tema-img tema-img-grande mb-3">
                 <h5 class="card-title fw-bold">JavaScript</h5>
                 <p class="card-text">Demuestra tus habilidades en JavaScript.</p>
                 <a href="#" class="btn btn-morado mt-2">Jugar</a>
