@@ -1,0 +1,104 @@
+body {
+    background-color: #f8f9fa;
+}
+
+/* Paleta de colores */
+:root {
+    --morado: #7c3aed;
+    --morado-oscuro: #5a189a;
+    --blanco: #fff;
+}
+
+.bg-morado {
+    background-color: var(--morado) !important;
+}
+
+.text-morado {
+    color: var(--morado) !important;
+}
+
+.btn-morado {
+    background-color: var(--morado);
+    color: var(--blanco);
+    border: none;
+    transition: background 0.2s;
+}
+.btn-morado:hover {
+    background-color: var(--morado-oscuro);
+    color: var(--blanco);
+}
+
+.navbar {
+    border-radius: 0 0 1rem 1rem;
+}
+
+.logo-principal {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    background: var(--blanco);
+    border-radius: 50%;
+    box-shadow: 0 4px 16px rgba(124,58,237,0.15);
+    /* border: 4px solid var(--morado); */
+}
+
+.card-tema {
+    border: none;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 24px 0 rgba(124,58,237,0.10), 0 1.5px 6px 0 rgba(90,24,154,0.08);
+    transition: box-shadow 0.2s, transform 0.2s;
+    overflow: hidden;
+    background: var(--blanco);
+}
+.card-tema:hover {
+    box-shadow: 0 12px 32px 0 rgba(124,58,237,0.18), 0 2px 8px 0 rgba(90,24,154,0.12);
+    transform: translateY(-6px) scale(1.03);
+}
+.card-tema .tema-img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+.tema-grande {
+    min-height: 220px;
+    padding: 2.5rem 1.5rem;
+    font-size: 1.2rem;
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tema-img-grande {
+    width: 140px !important;
+    height: 140px !important;
+    object-fit: contain;
+    margin-bottom: 2rem;
+}
+
+.card-tema .btn-morado {
+    font-size: 1.3rem;
+    padding: 0.75rem 2.5rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+}
+
+/* Burbujas decorativas fondo */
+.burbujas-bg {
+    position: fixed;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+.burbuja {
+    position: absolute;
+    border-radius: 50%;
+    background: var(--morado);
+    opacity: 0.13;
+    filter: blur(2px);
+}
+.burbuja1 { width: 220px; height: 220px; top: 5%; left: 8%; }
+.burbuja2 { width: 120px; height: 120px; top: 60%; left: 80%; }
+.burbuja3 { width: 80px; height: 80px; top: 80%; left: 15%; }
+.burbuja4 { width: 160px; height: 160px; top: 30%; left: 60%; }
+.burbuja5 { width: 60px; height: 60px; top: 70%; left: 50%; }
