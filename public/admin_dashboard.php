@@ -39,6 +39,7 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <h2 class="fw-bold text-morado mb-4">Panel de Administración</h2>
         <div class="mb-4">
             <a href="questions_crud.php" class="btn btn-outline-primary btn-lg">Gestionar preguntas</a>
+            <a href="export_players_report.php" class="btn btn-success btn-lg ms-2">Descargar reporte Excel</a>
         </div>
         <div class="card mb-4">
             <div class="card-header bg-morado text-white">Usuarios registrados</div>
