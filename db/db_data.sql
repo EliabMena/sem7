@@ -23,8 +23,8 @@ DELETE FROM Users; -- Deleting all users to ensure a clean start for the placeho
 -- Insert a placeholder user for foreign key references in Avatars and PlayerProgress
 DELETE FROM Users; -- Deleting all users to ensure a clean start for the placeholder
 INSERT INTO Users (user_id, email, name, password, role) VALUES
-  (1, 'player@example.com', 'Test Player', 'hashedpassword123', 'player'),
-  (2, 'admin@example.com', 'Admin User', 'adminhashedpass', 'admin');
+  (1, 'player@example.com', 'Test Player', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 'player'),
+  (2, 'admin@example.com', 'Admin User', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 'admin');
 
 -- 1. Insert Specific Topics
 INSERT INTO Topics (topic_name) VALUES

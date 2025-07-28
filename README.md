@@ -10,11 +10,36 @@ Proyecto completo para gestión de trivias, usuarios y administración, usando P
 - `src/` — Lógica de la aplicación, clases, API, sanitización, conexión a base de datos.
 - `db/` — Scripts y utilidades de base de datos (`quiz_schema.sql`).
 
-## Cómo empezar
-1. Importa el script SQL desde `db/quiz_schema.sql` en tu gestor de base de datos MySQL.
-2. Configura la conexión en `src/db.php` según tus credenciales.
-3. Ejecuta el sistema desde `public/index.php` en tu servidor local (WAMP, XAMPP, etc.).
-4. Personaliza el frontend en `public/` y los estilos en `assets/`.
+
+## Pasos para ejecutar el sistema en un entorno local (WAMP)
+
+1. **Instala WAMP Server:** Descarga e instala WAMP desde https://www.wampserver.com/
+2. **Instala Git:** Descarga e instala Git desde https://git-scm.com/
+3. **Clona el repositorio del proyecto dentro de la carpeta `www` de WAMP:**
+   ```bash
+   cd C:\wamp64\www
+   git clone https://github.com/EliabMena/sem7.git
+   ```
+4. **Inicia WAMP** y asegúrate que Apache y MySQL estén activos (icono verde).
+5. **Crea la base de datos:**
+   - Accede a PhpMyAdmin en http://localhost/phpmyadmin
+   - Crea la base de datos llamada `dbQuiz`
+   - Importa el archivo SQL `db/quiz_schema.sql` y luego (opcionalmente) `db/db_data.sql` desde el proyecto clonado.
+6. **Configura la conexión a la base de datos en:**
+   - Edita el archivo `src/db.php` y ajusta los siguientes valores según tu entorno:
+     ```php
+     $host = 'localhost';
+     $dbname = 'dbQuiz';
+     $user = 'root';
+     $pass = '';
+     ```
+7. **Accede al sistema en el navegador:**
+   - http://localhost/sem7/public/
+8. **Credenciales de ejemplo:**
+   - Administrador: admin@example.com / 123456
+   - Jugador: player@example.com / 123456
+
+> **Nota:** Puedes crear más usuarios desde el panel de administración.
 
 ## Notas y recomendaciones
 - El sistema incluye roles: `admin`, `operative` y `player`.
